@@ -24,16 +24,12 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         dupl = []
         nums.sort()
-        for i in range(0,len(nums)):
-            while nums[i + 1] <= len(nums):+
+        for i in range(0,len(nums)-1):
+            
         
                 if nums[i] == nums[i+1]:
                     dupl.append(nums[i])
                     return True
 
-                # if nums[i + 1] > len(nums):
-                #     return
-
-                else:
-                    return False
-            return
+              
+            
